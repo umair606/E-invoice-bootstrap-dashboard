@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Premium Admin Template</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    
+   <!-- Favicon icon -->
+   <link rel="icon" href="files/assets/images/" type="image/x-icon">
+   <!-- Google font-->
+   <link rel="stylesheet" href="files/assets/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+   <!-- Required Fremwork -->
+   <link rel="stylesheet" type="text/css" href="files\bower_components\bootstrap\css\bootstrap.min.css">
+   <!-- feather Awesome -->
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\feather\css\feather.css">
+   <!-- Style.css -->
+   <link rel="stylesheet" type="text/css" href="files\assets\css\style.css">
+   <link rel="stylesheet" type="text/css" href="files\assets\css\jquery.mCustomScrollbar.css">
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\themify-icons\themify-icons.css">
+   <!-- ico font -->
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\icofont\css\icofont.css">
+   <!--font awesome-->
+   <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        html{
+         scroll-behavior: smooth;
+         scroll-padding: 5rem;
+        }
+    </style>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                        <a href="index.html">
+                            <p class="fw-bold my-3 ms-2"> <i class="feather icon-home"></i> Logo Name</p>
+                        </a>
+                        <a class="mobile-options">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon search-btn"><i class="feather icon-search"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="feather icon-maximize full-screen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="feather icon-bell"></i>
+                                        <span class="badge bg-c-pink">5</span>
+                                    </div>
+                                    <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <h6>Notifications</h6>
+                                            <label class="label label-danger">New</label>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img1.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Jason Brody</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img-2.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img-3.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="files/assets/images/profile-pic.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <span>Wahid Asghar</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="userProfile.html">
+                                                <i class="feather icon-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Login.html">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="pcoded-navigatio-lavel">Navigation</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-gauge-high"></i></span>
+                                        <span class="pcoded-mtext">Dashboard</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="#statistics">
+                                                <span class="pcoded-mtext">Statistics</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#quick">
+                                                <span class="pcoded-mtext">Quick actions</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#service">
+                                                <span class="pcoded-mtext">Services</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#pack">
+                                                <span class="pcoded-mtext">Packages</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#arrival">
+                                                <span class="pcoded-mtext">Arrivals & Help Center</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                   
+                                </li>
+                                
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-note-sticky"></i></span>
+                                        <span class="pcoded-mtext">Invoice</span>
+                                        <span class="pcoded-badge label label-danger">HOT</span>
+                                      
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        
+                                       
+                                        <li class=" ">
+                                            <a href="CreateInvoice.html">
+                                                <span class="pcoded-mtext">Create Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="Sentinvoices.html">
+                                                <span class="pcoded-mtext">Sent Invoice</span>
+                                                <span class="pcoded-badge label label-danger">100+</span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="ReceivedInvoice.html">
+                                                <span class="pcoded-mtext">Recevied Invoice</span>
+                                                <span class="pcoded-badge label label-info">10</span>
+                                            </a>
+                                        </li>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="Draft.html">
+                                            <span class="pcoded-mtext">Drafts</span>
+                                            <span class="pcoded-badge label label-warning ">2</span>
+                                        </a>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="Customer.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-user-group"></i></span>
+                                        <span class="pcoded-mtext">Customers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigatio-lavel">Pages</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="Statistics.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-signal"></i></span>
+                                        <span class="pcoded-mtext">Statistics</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Warehouse.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-warehouse"></i></span>
+                                        <span class="pcoded-mtext">Warehouse</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Productpage.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-dolly"></i></span>
+                                        <span class="pcoded-mtext">Products and Services</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Subscription.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-crown"></i></span>
+                                        <span class="pcoded-mtext">Subscriptions</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="pcoded-navigatio-lavel">Shortcuts</div>
+                            <ul class="pcoded-item pcoded-left-item">                            
+                                <li class=" ">
+                                    <a href="Login.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                        <span class="pcoded-mtext " style="color: #EF4040;font-weight: 700;">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <!--1-block start-->
+                                    <div class="container">
+                                        <div class="my-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                            <div class="mb-2"><h4>Create an invoice</h4></div>
+                                            <div class="d-flex flex-column flex-md-row gap-2 justify-content-center align-items-center">
+                                                <div><button class="btn btn-outline-secondary" type="button">Save Draft</button></div>
+                                                <div><button class="btn btn-primary" type="button"><i class="fa fa-paper-plane"></i>Send invoice</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container "style="background-color: #fff;border-radius: 15px;">
+                                        <div class="d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center">
+                                            <div>
+                                                 <!-- Button trigger modal -->
+                                                <button  style="border-radius: 10px;" type="button" class="btn btn text-primary" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-upload"></i>
+                                                    insert your logo
+                                                 </button>
+              
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Upload image</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="my-3">
+                                                    <form action="#" novalidate class="need-validation">
+                                                        <div class="mb-3">
+                                                            <label for="formFile" class="form-label">Default file input example</label>
+                                                            <input class="form-control" type="file" id="formFile">
+                                                          </div>
+                                                       
+                                                    </form>
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Update</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       
+                                        </div>
+                                        </div>
+                                        <div>
+                                            <h5>Invoice 1/FE dated 01/09/2024</h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center mt-3 ms-4 ">
+                                        <div>
+                                            <div style="color: #cdc9c9;" class="mb-1">From</div>
+                                            <div>Mario Rossi</div>
+                                            <div>Via Alessandro Manzoni, 12, 20121 Milan (MI)</div>
+                                            <div>VAT number 01234567890</div>
+                                            <div>
+                                            <span> 
+                                                <button  style="border-radius: 10px; margin-left: -6%;" type="button" class="btn btn text-primary" data-toggle="modal" data-target="#exampleModale"><i class="fa fa-edit"></i>
+                                                    Edit
+                                                 </button>
+              
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="my-3">
+                                                  
+                                                      <div class="my-2">
+                                                        <label for="username"class="my-1" style="font-weight:600 ;" >Title</label>
+                                                        <input type="text" id="username" class="form-control" required>
+                                                    </div>
+                                                    <div class="my-2" >
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Vat Number</label>
+                                                        <input type="text" id="username" class="form-control" value="123456789" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >First Name</label>
+                                                        <input type="text" id="username" class="form-control" value="Wahid" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Sur Name</label>
+                                                        <input type="text" id="username" class="form-control" value="asghar" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"   style="font-weight:600 ;" >Address</label>
+                                                        <input type="text" id="username" class="form-control" value="lorem ipsum" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Email</label>
+                                                        <input type="email" id="username" class="form-control" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Reciptant Code</label>
+                                                        <input type="text" id="username" class="form-control" required>
+                                                    </div>
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Tax ID Code</label>
+                                                        <input type="text" id="username" class="form-control" required>
+                                                    </div>  
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >City</label>
+                                                        <input type="text" id="username" class="form-control" value="lorem ipsum" required>
+                                                    </div>  
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >Province</label>
+                                                        <select class="form-select" aria-label="Default select example" id="">
+                                                            <option selected>Open this select menu</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                          </select>
+                                                    </div>  
+                                                    <div class="my-2">
+                                                        <label for="username"class="my-1"  style="font-weight:600 ;"  >postal code</label>
+                                                        <input type="" id="username" class="form-control" value="1234" required>
+                                                    </div>  
+                                                </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">update</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       
+                                        </div>
+                                            </span>
+                                            <span> 
+                                                <button  style="border-radius: 10px; margin-left: -6%;" type="button" class="btn btn text-primary" data-toggle="modal" data-target="#exampleModalee"><i class="fa fa-edit"></i>
+                                                    Edit Contacts
+                                                 </button>
+              
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Edit contacts</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <div class="my-3">
+                                                  
+                                                    <div class="my-2">
+                                                      <label for="email"class="my-1" style="font-weight:600 ;" >Email</label>
+                                                      <input type="email" id="email" class="form-control" required>
+                                                      <div style="margin-left: -10%; " class="mt-1">
+                                                        <div class="mb-3 mx-5 form-check form-switch" >
+                                                            <input type="checkbox" class="form-check-input">
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="my-2" >
+                                                      <label for="phone"class="my-1"  style="font-weight:600 ;"  >Phone Number</label>
+                                                      <input type="text" id="phone" class="form-control"  required>
+                                                      <div style="margin-left: -10%; " class="mt-1">
+                                                        <div class="mb-3 mx-5 form-check form-switch" >
+                                                            <input type="checkbox" class="form-check-input">
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="my-2">
+                                                      <label for="pec"class="my-1"  style="font-weight:600 ;"  >Pec Address</label>
+                                                      <input type="text" id="pec" class="form-control"required>
+                                                      <div style="margin-left: -10%; " class="mt-1">
+                                                        <div class="mb-3 mx-5 form-check form-switch" >
+                                                            <input type="checkbox" class="form-check-input">
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                                 
+                                                  <div class="my-2">
+                                                      <label for="web"class="my-1"  style="font-weight:600 ;"  >Website</label>
+                                                      <input type="text" id="web"  class="form-control" required>
+                                                      <div style="margin-left: -10%; " class="mt-1">
+                                                        <div class="mb-3 mx-5 form-check form-switch" >
+                                                            <input type="checkbox" class="form-check-input">
+                                                        </div>
+                                                      </div>
+                                                    
+                                                  </div>  
+                                              </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">update</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       
+                                        </div>
+                                            </span>
+                                            
+                                        </div>
+                                        </div>
+                                        <div>
+                                            <button  style="border-radius: 10px; margin-left: -6%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalx"><i class="fa-solid fa-user-plus"></i>
+                                                Choose the Recipient
+                                             </button>
+          
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Recipient</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="my-3">
+                                              
+                                                <div class="my-2">
+                                                    <form class="d-flex gap-2">
+                                                        <input class="form-control " type="search" placeholder="Search customer" aria-label="Search">
+                                                        <button class="btn btn-outline-primary  " type="submit">Search</button>
+                                                      </form>
+                                                  </div>
+                                              </div>
+                                              <div><h4> List</h4></div>
+                                              <div style="height: 400px; overflow: hidden; overflow-y: scroll;">
+                                                <div class="py-3" >
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between justify-content-center ">
+                                                        <div>
+                                                            <h6 style="font-weight: 600;">Wahid Ashar</h6>
+                                                            <div>lorem ipsum</div>
+                                                            <div><span class="text-primary">Vat Number : </span>lorem ispum</div>
+                                                            <div><span class="text-primary">Fiscal code : </span>lorem ipsum</div>
+                                                        </div>
+                                                        <div class="mt-4 me-3">
+                                                            <button class="btn btn-outline-secondary" style="font-size: 0.8rem;">You Choose</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                  </div>
+                                                  <center>
+                                                    <div class="py-1">
+                                                        <hr style="background: #cdc9c9;width: 80%;">
+                                                    </div>
+
+                                                  </center>
+
+                                                  <div class="py-3" >
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between justify-content-center ">
+                                                        <div>
+                                                            <h6 style="font-weight: 600;">Wahid Ashar</h6>
+                                                            <div>lorem ipsum</div>
+                                                            <div><span class="text-primary">Vat Number : </span>lorem ispum</div>
+                                                            <div><span class="text-primary">Fiscal code : </span>lorem ipsum</div>
+                                                        </div>
+                                                        <div class="mt-4 me-3">
+                                                            <button class="btn btn-outline-secondary" style="font-size: 0.8rem;">You Choose</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                  </div>
+                                                  <center>
+                                                    <div class="py-1">
+                                                        <hr style="background: #cdc9c9;width: 80%;">
+                                                    </div>
+
+                                                  </center>
+
+                                                  <div class="py-3" >
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between justify-content-center ">
+                                                        <div>
+                                                            <h6 style="font-weight: 600;">Wahid Ashar</h6>
+                                                            <div>lorem ipsum</div>
+                                                            <div><span class="text-primary">Vat Number : </span>lorem ispum</div>
+                                                            <div><span class="text-primary">Fiscal code : </span>lorem ipsum</div>
+                                                        </div>
+                                                        <div class="mt-4 me-3">
+                                                            <button class="btn btn-outline-secondary" style="font-size: 0.8rem;">You Choose</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                  </div>
+                                                  <center>
+                                                    <div class="py-1">
+                                                        <hr style="background: #cdc9c9;width: 80%;">
+                                                    </div>
+
+                                                  </center>
+                                                  <div class="py-3" >
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between justify-content-center ">
+                                                        <div>
+                                                            <h6 style="font-weight: 600;">Wahid Ashar</h6>
+                                                            <div>lorem ipsum</div>
+                                                            <div><span class="text-primary">Vat Number : </span>lorem ispum</div>
+                                                            <div><span class="text-primary">Fiscal code : </span>lorem ipsum</div>
+                                                        </div>
+                                                        <div class="mt-4 me-3">
+                                                            <button class="btn btn-outline-secondary" style="font-size: 0.8rem;">You Choose</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                  </div>
+                                                  <center>
+                                                    <div class="py-1">
+                                                        <hr style="background: #cdc9c9;width: 80%;">
+                                                    </div>
+
+                                                  </center>
+                                                  
+                                              </div>
+                                           
+                                          </div>
+                                          </div>
+                                         
+                                        </div>
+                                      </div>
+                                   
+                                    </div>
+                                     </div>
+                                     <!--2nd start-->
+                                     <form action="#">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-2">
+                                        <div class="my-2 col-12 col-md-4">
+                                            <label for="type" class="form-check-label mb-1">Document type</label>
+                                            <select class="form-select " aria-label="Default select example" id="type">
+                                                <option selected>select</option>
+                                                <option value="1">Invoice</option>
+                                                <option value="2">Parcel</option>
+                                                <option value="3">Defered invoice</option>
+                                                <option value="4">Self invoice</option>
+                                              </select>
+                                        </div>
+                                        <div class="my-2  col-12 col-md-4">
+                                            <label for="type" class="form-check-label mb-1 ">Number</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                        <div class="my-2 col-12 col-md-4">
+                                            <label for="type" class="form-check-label mb-1 ">Date</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                       
+                                        </div>
+                                     </form>   
+                                    <!--2nd end-->
+
+                                       <!--3nd start-->
+                                       <form action="#">
+                                    <div>
+                                       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-2">
+                                        <div class="my-2 col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1">Product/Service</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                        <div class="my-2  col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1 ">Taxable</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                        <div class="my-2 col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1 ">Amount</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                        <div class="my-2 col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1 ">Discount</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                        <div class="my-2 col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1">Vat</label>
+                                            <select class="form-select " aria-label="Default select example" id="type">
+                                                <option selected>select</option>
+                                                <option value="1">100%</option>
+                                                <option value="2">75%</option>
+                                                <option value="3">50%</option>
+                                                <option value="4">25%</option>
+                                                <option value="5">0%</option>
+                                              </select>
+                                        </div>
+                                        <div class="my-2 col-12 col-md-2">
+                                            <label for="type" class="form-check-label mb-1 ">Total</label>
+                                            <input type="text" class="form-control" id="type">
+                                        </div>
+                                       
+                                        </div>
+                                        <div class="py-2 ms-3">
+                                            <button class="btn btn-outline-primary"><i class="fa fa-plus"></i> Add</button>
+                                            <button class="btn btn-outline-secondary"><i class="fa fa-minus"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    <!--3nd end-->
+
+                                    <div>
+                                        <!--tags start-->
+                                            <center>
+                                            <div class="py-1">
+                                                <hr style="background: #cdc9c9;width: 95%;">
+                                            </div>
+                                            </center>
+                                          
+                                          <div class="d-flex flex-md-column justify-content-between align-items-start gap-2">
+                                            <div class="col-12 col-md-2">
+                                                  <!-- Button trigger modal -->
+                                              <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx1"><i class="fa fa-plus"></i>
+                                                Social Security Fund
+                                             </button>
+          
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalx1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Social Security Fund</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="mx-2 mt-1">Don't worry, this field is not mandatory for everyone. If you do not have a social security fund, continue with the rest of the compilation</div>
+                                          <div class="modal-body">
+                                            <div class="my-3">
+                                                <form action="#" >
+                                                    <div class="mb-1">
+                                                        <label for="text" class="form-label">Case type</label>
+                                                        <select class="form-select " aria-label="Default select example" id="type">
+                                                            <option selected>select</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                          </select>
+                                                      </div>
+                                                      <div class="mb-1">
+                                                        <label for="text" class="form-label">Rate</label>
+                                                        <input class="form-control" type="text" id="text">
+                                                      </div>
+                                                </form>
+                                            </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                   
+                                         </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <!-- Button trigger modal -->
+                                            <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx2"><i class="fa fa-plus"></i>
+                                             Withholding Tax
+                                           </button>
+        
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModalx2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel"> Withholding Tax</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="mx-2 mt-1">Don't worry, this field is not mandatory for everyone. If you do not have a social security fund, continue with the rest of the compilation</div>
+                                        <div class="modal-body">
+                                          <div class="my-3">
+                                              <form action="#" >
+                                                  <div class="mb-1">
+                                                      <label for="text" class="form-label">withholding Tax type</label>
+                                                      <select class="form-select " aria-label="Default select example" id="type">
+                                                          <option selected>select</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                          <option value="3">3</option>
+                                                          <option value="4">4</option>
+                                                          <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                  
+                                              </form>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                 
+                                       </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                            <!-- Button trigger modal -->
+                                        <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx3"><i class="fa fa-plus"></i>
+                                         Note
+                                       </button>
+    
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="exampleModalx3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel"> Note</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="mx-2 mt-1">Don't worry, this field is not mandatory for everyone. If you do not have a social security fund, continue with the rest of the compilation</div>
+                                    <div class="modal-body">
+                                      <div class="my-3">
+                                          <form action="#" >
+                                              <div class="mb-1">
+                                                  <label for="text" class="form-label">Note</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                              
+                                          </form>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                  </div>
+                                </div>
+                             
+                                   </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                            <!-- Button trigger modal -->
+                                        <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx4"><i class="fa fa-plus"></i>
+                                         Stamp
+                                       </button>
+    
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="exampleModalx4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Stamp</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="mx-2 mt-1">From here you can apply virtual stamp for invoice</div>
+                                    <div class="modal-body">
+                                      <div class="my-3">
+                                          <form action="#" >
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">DeApply €2.00 stamp duty to the invoice</label>
+                                              </div>
+                                          </form>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div  >
+                                            <input type="checkbox" id="check" >
+                                            <label for="check">For Future Use</label>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                   </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <!-- Button trigger modal -->
+                                            <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx5"><i class="fa fa-plus"></i>
+                                             Rounding
+                                           </button>
+        
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModalx5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel" >Rounding</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="mx-3 mt-1">Use this screen if you want to apply rounding to the amount calculated on your invoice.</div>
+                                        <div class="modal-body">
+                                          <div class="my-3">
+                                              <form action="#" >
+                                                <div class="form-check form-switch">
+                                                    <label class="form-check-label" style="margin-left: -4%;">Rounded</label>
+                                                    <input type="text" class="form-control">
+                                                    <div class="mt-2">
+                                                        <div>Total amount : <span></span></div>
+                                                        <div>Rounded amount : <span></span></div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" >
+                                                    <div></div>
+                                                    <div>
+                                                        
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                              </form>
+                                          </div>
+                                        </div>
+                                       
+                                      </div>
+                                    </div>
+                                 
+                                       </div>
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <!-- Button trigger modal -->
+                                            <button  style="border-radius: 10px;" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalx6"><i class="fa fa-plus"></i>
+                                             Discount/surchar
+                                           </button>
+        
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModalx6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Discount/surcharge</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="mx-3 mt-1">Use this screen if you want to apply a discount or increase to the amount calculated on the invoice.</div>
+                                        <div class="modal-body">
+                                          <div class="my-3">
+                                              <form action="#" >
+                                                <div class="form-check form-switch">
+                                                    <label class="form-check-label" style="margin-left: -4%;">Discount</label>
+                                                    <input type="text" class="form-control">
+                                                    <div class="mt-2">
+                                                        <div>Total amount : <span></span></div>
+                                                        <div>Rounded amount : <span></span></div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center" >
+                                                    <div></div>
+                                                    <div>
+                                                        
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </div>
+                                              </form>
+                                          </div>
+                                        </div>
+                                       
+                                      </div>
+                                    </div>
+                                 
+                                       </div>
+                                            </div>
+                                            </div>
+                                             <!--tags end-->
+                                            <!--summary-->
+                                            <div class="container my-4 " >
+                                                <div class="card mx-auto" style="width: 60rem; ">
+                                                    <div class="card-header " style="font-weight: 600;">
+                                                      Summary
+                                                    </div>
+                                                   <div class="card-body">
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-1" >
+                                                        <div>Taxable</div>
+                                                        <div>€0.00</div>
+                                                    </div>
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-1" >
+                                                        <div style="font-weight: 600;">Total Invoice</div>
+                                                        <div style="font-weight: 600;">€0.00</div>
+                                                    </div>
+                                                         <center>
+                                                        <div class="py-1">
+                                                            <hr style="background: #b9b7b7;width: 100%;">
+                                                        </div>
+                                                        </center>
+                                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center " >
+                                                            <div style="font-weight: 700;">Amount Due</div>
+                                                            <div style="font-weight: 700;">€0.00</div>
+                                                        </div>   
+
+                                                   </div>
+                                                  </div>
+                                            </div>
+                                             <!--last block start-->
+                                             <div>
+                                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-2">
+                                         
+                                                 <div class="my-2 col-12 col-md-3">
+                                                     <label for="type" class="form-check-label mb-1">Terms of payment</label>
+                                                     <select class="form-select " aria-label="Default select example" id="type">
+                                                         <option selected>select</option>
+                                                         <option value="1">1</option>
+                                                         <option value="2">2</option>
+                                                         <option value="3">3</option>
+                                                         <option value="4">4</option>
+                                                         <option value="5">5</option>
+                                                       </select>
+                                                 </div>
+                                                 <div class="my-2 col-12 col-md-3">
+                                                    <label for="type" class="form-check-label mb-1">IBAN</label>
+                                                    <input type="text" class="form-control" id="type">
+                                                </div>
+                                                <div class="my-2  col-12 col-md-3">
+                                                    <label for="type" class="form-check-label mb-1 ">Expiration date</label>
+                                                    <input type="text" class="form-control" id="type">
+                                                </div>
+                                                <div class="my-2 col-12 col-md-3">
+                                                    <label for="type" class="form-check-label mb-1 ">Installment</label>
+                                                    <input type="text" class="form-control" id="type">
+                                                </div>
+                                             
+                                                 </div>
+                                                 <div class="py-2 ms-3  ">
+                                                     <button class="btn btn-outline-primary"><i class="fa fa-plus"></i> Add payment installment</button>
+                                                     <button class="btn btn-outline-secondary"><i class="fa fa-minus"></i> Delete</button>
+                                                 </div>
+                                             </div>
+                                             <!--last block end-->
+                                               
+                                           </div>
+                                           <div>
+
+                                           </div>
+                                           <center>
+                                            <div class="pt-2 pb-5">
+                                                <hr style="background: #cdc9c9;width: 95%;">
+                                            </div>
+                                            </center>
+                                          
+                                        
+                                    </div>
+                                    <div class="my-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <div class="mb-2"></div>
+                                        <div class="d-flex flex-column flex-md-row gap-2 justify-content-center align-items-center" style="margin-right:5%;">
+                                            <div><button class="btn btn-outline-secondary" type="button">Save Draft</button></div>
+                                            <div><button class="btn btn-primary" type="button"><i class="fa fa-paper-plane"></i>Send invoice</button></div>
+                                        </div>
+                                    </div>
+                                    
+                                           </div>
+                                     <!--block end-->
+                                   
+                                </div>
+
+                                <div id="styleSelector">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Required Jquery -->
+  \ <!-- Required Jquery -->
+  <script data-cfasync="false" src="..\..\..\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js"></script><script type="text/javascript" src="files\bower_components\jquery\js\jquery.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\popper.js\js\popper.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\bootstrap\js\bootstrap.min.js"></script>
+  <!-- jquery slimscroll js -->
+  <script type="text/javascript" src="files\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+  <!-- modernizr js -->
+  <script type="text/javascript" src="files\bower_components\modernizr\js\modernizr.js"></script>
+  <!-- Chart js -->
+  <script type="text/javascript" src="files\bower_components\chart.js\js\Chart.js"></script>
+  <!-- amchart js -->
+  <script src="files\assets\pages\widget\amchart\amcharts.js"></script>
+  <script src="files\assets\pages\widget\amchart\serial.js"></script>
+  <script src="files\assets\pages\widget\amchart\light.js"></script>
+  <script src="files\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="..\files\assets\js\SmoothScroll.js"></script>
+  <script src="files\assets\js\pcoded.min.js"></script>
+  <!-- custom js -->
+  <script src="files\assets\js\vartical-layout.min.js"></script>
+  <script type="text/javascript" src="files\assets\pages\dashboard\custom-dashboard.js"></script>
+  <script type="text/javascript" src="files\assets\js\script.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>

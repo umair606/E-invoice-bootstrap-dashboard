@@ -1,0 +1,132 @@
+body{
+ 
+    background-color: #f5f5f9;
+ }
+.main1{
+    margin: 2% auto;
+    height: 637px;
+    box-shadow: 0px 12px 18px rgba(54, 176, 138, 0.005);
+    border-radius: 6px;
+    background: #fff;
+
+}
+.logo{
+    color: #fff;
+    font-weight: 600;
+}
+a.loginbtn{
+    text-decoration: none;
+    color: #fff;
+    width: 60%;
+    font-weight: 500;
+    display: inline-block;
+    margin: 7% 20%;
+    text-align: center;
+    border: 2px solid #eff0ff;
+    border-radius: 20px;
+    padding: 3% 1%;
+}
+a.loginbtn:hover{
+    color:  #01a9ac;
+    background-color: #fff;
+}
+.big-heading{
+    font-weight: 900;
+    font-size: 2rem;
+    color:  #01a9ac;
+}
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
+    width: 100%;
+    flex-direction: row;
+   
+}
+.progress-bar .stage{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.progress-bar .tool-tip{
+    color:#01a9ac;
+    font-weight: 600;
+}
+.stageno{
+    margin:  6% 0;
+    padding: 2% 7%;
+    border-radius: 50%;
+    background-color:#f5f5f9 ;
+}
+.input-f{
+    width: 280px;
+    max-width: 100%;
+    font-weight: 400;
+    padding: 3% 2%;
+}
+.input-i{
+    width: 360px;
+    max-width: 100%;
+    font-weight: 400;
+    padding: 3% 2%;
+}
+.pagination-btns{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+    padding: 0 2%;
+}
+.nextPage, .prePage{
+    background-color:  #01dbdf;
+    color:#fff;
+    width: 25%;
+    cursor: pointer;
+    padding: 2%;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius:4px ;
+    border: none;
+    outline: none;
+   
+}
+.loginPage{
+    background-color:  #01dbdf;
+    color:#fff;
+    width: 55%;
+    cursor: pointer;
+    padding: 2%;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius:4px ;
+    border: none;
+    outline: none;  
+}
+.awe-ico{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    top: calc(59%);
+    left: 0.8rem;
+    color: gray;
+}
+
+.awe-ico .input-f{
+    left: .5rem;
+    padding-left: 2.5rem;
+}
+.awe-ico .input-i{
+    left: .5rem;
+    padding-left: 2.5rem;
+}
+.nextPage:hover, .prePage:hover{
+    background-color:  #01a9ac;
+}
+.loginPage:hover{
+    background-color:  #01a9ac;
+}
+
+

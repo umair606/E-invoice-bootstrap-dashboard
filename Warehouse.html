@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Premium Admin Template</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you Edit the page via file:// -->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="Editport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+    <link rel="icon" href="files\assets\images\favicon.ico" type="image/x-icon">
+    <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="files\bower_components\bootstrap\css\bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="files\assets\icon\themify-icons\themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="files\assets\icon\icofont\css\icofont.css">
+    <!-- feather Awesome -->
+    <link rel="stylesheet" type="text/css" href="files\assets\icon\feather\css\feather.css">
+    <!-- Data Table Css -->
+    <link rel="stylesheet" type="text/css" href="files\bower_components\datatables.net-bs4\css\dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="files\assets\pages\data-table\css\buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="files\bower_components\datatables.net-responsive-bs4\css\responsive.bootstrap4.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="files\assets\css\style.css">
+    <link rel="stylesheet" type="text/css" href="files\assets\css\jquery.mCustomScrollbar.css">
+    <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Pre-loader start -->
+<div class="theme-loader">
+    <div class="ball-scale">
+        <div class='contain'>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+            <div class="ring">
+                <div class="frame"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pre-loader end -->
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+
+        <nav class="navbar header-navbar pcoded-header">
+            <div class="navbar-wrapper">
+
+                <div class="navbar-logo">
+                    <a class="mobile-menu" id="mobile-collapse" href="#!">
+                        <i class="feather icon-menu"></i>
+                    </a>
+                    <a href="index.html">
+                        <p class="fw-bold my-3 ms-2"> <i class="feather icon-home"></i> Logo Name</p>
+                    </a>
+                    <a class="mobile-options">
+                        <i class="feather icon-more-horizontal"></i>
+                    </a>
+                </div>
+
+                <div class="navbar-container container-fluid">
+                    <ul class="nav-left">
+                        <li class="header-search">
+                            <div class="main-search morphsearch-search">
+                                <div class="input-group">
+                                    <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon search-btn"><i class="feather icon-search"></i></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!" onclick="javascript:toggleFullScreen()">
+                                <i class="feather icon-maximize full-screen"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li class="header-notification">
+                            <div class="dropdown-primary dropdown">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="feather icon-bell"></i>
+                                    <span class="badge bg-c-pink">5</span>
+                                </div>
+                                <ul class="show-notification notification-Edit dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="files/assets/images/img1.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Jason Brody</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="files/assets/images/img-2.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="files/assets/images/img-3.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                       
+                        <li class="user-profile header-notification">
+                            <div class="dropdown-primary dropdown">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="files/assets/images/profile-pic.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <span>Wahid Asghar</span>
+                                    <i class="feather icon-chevron-down"></i>
+                                </div>
+                                <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                    <li>
+                                        <a href="userProfile.html">
+                                            <i class="feather icon-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Login.html">
+                                            <i class="feather icon-log-out"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+ 
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <nav class="pcoded-navbar">
+                    <div class="pcoded-inner-navbar main-menu">
+                        <div class="pcoded-navigatio-lavel">Navigation</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="pcoded-hasmenu active pcoded-trigger">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-gauge-high"></i></span>
+                                    <span class="pcoded-mtext">Dashboard</span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class="">
+                                        <a href="index.html">
+                                            <span class="pcoded-mtext">Statistics</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="index.html">
+                                            <span class="pcoded-mtext">Quick actions</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="index.html">
+                                            <span class="pcoded-mtext">Services</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="index.html">
+                                            <span class="pcoded-mtext">Packages</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="index.html">
+                                            <span class="pcoded-mtext">Arrivals & Help Center</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                               
+                            </li>
+                            
+                            <li class="pcoded-hasmenu">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-note-sticky"></i></span>
+                                    <span class="pcoded-mtext">Invoice</span>
+                                    <span class="pcoded-badge label label-danger">HOT</span>
+                                  
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    
+                                   
+                                    <li class=" ">
+                                        <a href="CreateInvoice.html">
+                                            <span class="pcoded-mtext">Create Invoice</span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="Sentinvoices.html">
+                                            <span class="pcoded-mtext">Sent Invoice</span>
+                                            <span class="pcoded-badge label label-danger">100+</span>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="ReceivedInvoice.html">
+                                            <span class="pcoded-mtext">Recevied Invoice</span>
+                                            <span class="pcoded-badge label label-info">10</span>
+                                        </a>
+                                    </li>
+                                </li>
+                                <li class=" ">
+                                    <a href="Draft.html">
+                                        <span class="pcoded-mtext">Drafts</span>
+                                        <span class="pcoded-badge label label-warning ">2</span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="Customer.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-user-group"></i></span>
+                                    <span class="pcoded-mtext">Customers</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel">Pages</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="">
+                                <a href="Statistics.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-signal"></i></span>
+                                    <span class="pcoded-mtext">Statistics</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="Warehouse.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-warehouse"></i></span>
+                                    <span class="pcoded-mtext">Warehouse</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="Productpage.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-dolly"></i></span>
+                                    <span class="pcoded-mtext">Products and Services</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="Subscription.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-crown"></i></span>
+                                    <span class="pcoded-mtext">Subscriptions</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="pcoded-navigatio-lavel">Shortcuts</div>
+                        <ul class="pcoded-item pcoded-left-item">                            
+                            <li class=" ">
+                                <a href="Login.html">
+                                    <span class="pcoded-micon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                    <span class="pcoded-mtext " style="color: #EF4040;font-weight: 700;">Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="pcoded-content">
+                    <div class="pcoded-inner-content">
+                        <!-- Main-body start -->
+                        <div class="main-body">
+                            <div class="page-wrapper">
+                                <!-- Page-header start -->
+                                <div class="page-header">
+                                  <div>
+                                    <h4 class="my-3"><i class="fa-solid fa-boxes-stacked" style="font-weight: 600;"></i> Inventory</h4>
+                                    <div>This table display all available products along with their stock levels.</div>
+                                  </div>
+
+                                 
+                            </div>
+                                
+                                  </div>
+                                </div>
+                                <!-- Page-header end -->
+
+                                <!-- Page-body start -->
+                                <div class="page-body">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <!-- Zero config.table start -->
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h5>Records</h5>
+                                                   
+
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="dt-responsive table-responsive">
+                                                        <table id="simpletable" class="table table-striped table-bordered nowrap">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Product Names</th>
+                                                                <th>Position</th>
+                                                                <th>Office</th>
+                                                                <th>Age</th>
+                                                                <th>Stock Levels</th>
+                                                                <th>Actions</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Tiger Nixon</td>
+                                                                    <td>System Architect</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>61</td>
+                                                                    <td>20%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                        
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Garrett Winters</td>
+                                                                    <td>Accountant</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>63</td>
+                                                                    <td>25%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                      
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ashton Cox</td>
+                                                                    <td>Junior Technical Author</td>
+                                                                    <td>San Francisco</td>
+                                                                    <td>66</td>
+                                                                    <td>9%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                        
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cedric Kelly</td>
+                                                                    <td>Senior Javascript Developer</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>22</td>
+                                                                    <td>29%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                           
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Airi Satou</td>
+                                                                    <td>Accountant</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>33</td>
+                                                                    <td>28%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                           
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Brielle Williamson</td>
+                                                                    <td>Integration Specialist</td>
+                                                                    <td>New York</td>
+                                                                    <td>61</td>
+                                                                    <td>2%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                           
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Herrod Chandler</td>
+                                                                    <td>Sales Assistant</td>
+                                                                    <td>San Francisco</td>
+                                                                    <td>59</td>
+                                                                    <td>26%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                      
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Rhona Davidson</td>
+                                                                    <td>Integration Specialist</td>
+                                                                    <td>Tokyo</td>
+                                                                    <td>55</td>
+                                                                    <td>14%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                    
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Colleen Hurst</td>
+                                                                    <td>Javascript Developer</td>
+                                                                    <td>San Francisco</td>
+                                                                    <td>39</td>
+                                                                    <td>15%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                     
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sonya Frost</td>
+                                                                    <td>Software Engineer</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>23</td>
+                                                                    <td>13%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                      
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Jena Gaines</td>
+                                                                    <td>Office Manager</td>
+                                                                    <td>London</td>
+                                                                    <td>30</td>
+                                                                    <td>19%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                          
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Quinn Flynn</td>
+                                                                    <td>Support Lead</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>22</td>
+                                                                    <td>3%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                        
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Charde Marshall</td>
+                                                                    <td>Regional Director</td>
+                                                                    <td>San Francisco</td>
+                                                                    <td>36</td>
+                                                                    <td>16%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                        
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Haley Kennedy</td>
+                                                                    <td>Senior Marketing Designer</td>
+                                                                    <td>London</td>
+                                                                    <td>43</td>
+                                                                    <td>18%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                 
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tatyana Fitzpatrick</td>
+                                                                    <td>Regional Director</td>
+                                                                    <td>London</td>
+                                                                    <td>19</td>
+                                                                    <td>17%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                  
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Michael Silva</td>
+                                                                    <td>Marketing Designer</td>
+                                                                    <td>London</td>
+                                                                    <td>66</td>
+                                                                    <td>27%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                          
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Paul Byrd</td>
+                                                                    <td>Chief Financial Officer (CFO)</td>
+                                                                    <td>New York</td>
+                                                                    <td>64</td>
+                                                                    <td>9%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                         
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Gloria Little</td>
+                                                                    <td>Systems Administrator</td>
+                                                                    <td>New York</td>
+                                                                    <td>59</td>
+                                                                    <td>10%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                           
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Bradley Greer</td>
+                                                                    <td>Software Engineer</td>
+                                                                    <td>London</td>
+                                                                    <td>41</td>
+                                                                    <td>13%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                    
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Dai Rios</td>
+                                                                    <td>Personnel Lead</td>
+                                                                    <td>Edinburgh</td>
+                                                                    <td>35</td>
+                                                                    <td>26%</td>
+                                                                    <td class="dropdown">
+                                                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                                                                        <div class="dropdown-menu dropdown-menu-right b-none contact-menu">
+                                                                     
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-ui-delete"></i>Delete</a>
+                                                                            <a class="dropdown-item" href="#!"><i class="icofont icofont-edit"></i>Edit</a>
+                                                                           
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                           
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Zero config.table end -->
+                                            <!--Record purchase tab start-->
+                                            <div class="container" >
+                                                <div class="mb-3">
+                                                    <h4 class="my-3" style="margin-left: -3%;"><i class="fa-solid fa-boxes-stacked" style="font-weight: 600;"></i> Record Purchases</h4>
+                                                </div>
+                                                <div  style="background-color: #fff;border-radius: 15px;">
+                                                    <div class="py-2 mx-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                                        <div style="font-weight: 600;margin-right: 1%;" class="text-primary">Details on the goods arrival lines</div>
+                                                        <div class="mt-2" style="margin-right: 1%;"><i class="fa-solid fa-bars"></i><br><i class="fa-solid fa-xmark"></i></div>
+                                                    </div>
+                                                    <form action="#">
+                                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-2">
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1">Code</label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2  col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Item</label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Amount</label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Unit of measures</label>
+                                                            <input type="text" class="form-control" id="type" placeholder="(optional)">
+                                                        </div>
+                                                       
+                                                        </div>
+                                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-2">
+                                                            <div class="my-2 col-12 col-md-4">
+                                                                <label for="type" class="form-check-label mb-1">Net price</label>
+                                                                <input type="text" class="form-control" id="type">
+                                                            </div>
+                                                            <div class="my-2 col-12 col-md-4">
+                                                                <label for="type" class="form-check-label mb-1">Tax Rate</label>
+                                                                <select class="form-select form-control " aria-label="Default select example" id="type">
+                                                                    <option selected>select</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="my-2 col-12 col-md-4">
+                                                                <label for="type" class="form-check-label mb-1 ">Gross price</label>
+                                                                <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        </div>
+
+                                                        <div style="margin-left:1%;"><a href="#"><i class="fa-solid fa-arrow-down-short-wide"></i> Advance</a></div>
+
+                                                        <div class="my-2 col-12 col-md-4 mb-3">
+                                                            <label for="type" class="form-check-label mb-1  " style="margin-left: -5%;">Category( Chart of accounts and statistics)</label>
+                                                            <input type="text" class="form-control" id="type" placeholder="Category/account">
+                                                    </div>
+                                                    <div style="margin-left:1%;">
+
+                                                        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>Add entery</button>
+                                                    </div>
+                                                    <center>
+                                                        <div class="py-1">
+                                                            <hr style="background: #cdc9c9;width: 95%;">
+                                                        </div>
+                                                     </center>
+
+                                                     <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-2">
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1">Supplier</label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2  col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Category : </label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Date</label>
+                                                            <input type="text" class="form-control" id="type">
+                                                        </div>
+                                                        <div class="my-2 col-12 col-md-3">
+                                                            <label for="type" class="form-check-label mb-1 ">Not Dt Received</label>
+                                                            <input type="text" class="form-control" id="type" placeholder="(optional)">
+                                                        </div>
+                                                       
+                                                        </div>
+
+                                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-2">
+                                                            <div class="my-2 col-12 col-md-4">
+                                                                <label for="type" class="form-check-label mb-1">Currency</label>
+                                                                <select class="form-select form-control " aria-label="Default select example" id="type">
+                                                                    <option selected>select</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="my-2 col-12 col-md-8">
+                                                                <div class="form-group">
+                                                                    <label for="exampleFormControlTextarea1">Description</label>
+                                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                                  </div>
+                                                            </div> 
+                                                            </div>
+                                                     </form>
+                                                            <div class="container my-4 " >
+                                                                <div class="card mx-auto" style="width: 60rem; ">
+                                                                    <div class="card-header " style="font-weight: 600;">
+                                                                      Do the accounts addup ?
+                                                                    </div>
+                                                                   <div class="card-body">
+                                                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-1" >
+                                                                        <div>Taxable</div>
+                                                                        <div>€0.00</div>
+                                                                    </div>
+                                                                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-1" >
+                                                                        <div style="font-weight: 600;">Total Vat</div>
+                                                                        <div style="font-weight: 600;">€0.00</div>
+                                                                    </div>
+                                                                         <center>
+                                                                        <div class="py-1">
+                                                                            <hr style="background: #b9b7b7;width: 100%;">
+                                                                        </div>
+                                                                        </center>
+                                                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center " >
+                                                                            <div style="font-weight: 700;">Total</div>
+                                                                            <div style="font-weight: 700;">€0.00</div>
+                                                                        </div>   
+                
+                                                                   </div>
+                                                                   
+                                                                  </div>
+                                                                  <div class="mt-4 mb-2 d-flex flex-column flex-md-row justify-content-between align-items-center ">
+                                                                    <div ></div>
+                                                                    <button class="btn btn-primary mb-3">Records arrivals of goods</button>
+                                                                </div>
+                                                            </div>
+    
+
+                                                </div>
+                                              
+                                            </div>
+                                             <!--Record purchase tab start-->
+                                    </div>
+                                </div>
+                                <!-- Page-body end -->
+                            </div>
+                        </div>
+                        <!-- Main-body end -->
+                        <div id="styleSelector">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="files\bower_components\jquery\js\jquery.min.js"></script>
+<script type="text/javascript" src="files\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+<script type="text/javascript" src="files\bower_components\popper.js\js\popper.min.js"></script>
+<script type="text/javascript" src="files\bower_components\bootstrap\js\bootstrap.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="files\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="files\bower_components\modernizr\js\modernizr.js"></script>
+<script type="text/javascript" src="files\bower_components\modernizr\js\css-scrollbars.js"></script>
+
+<!-- data-table js -->
+<script src="files\bower_components\datatables.net\js\jquery.dataTables.min.js"></script>
+<script src="files\bower_components\datatables.net-buttons\js\dataTables.buttons.min.js"></script>
+<script src="files\assets\pages\data-table\js\jszip.min.js"></script>
+<script src="files\assets\pages\data-table\js\pdfmake.min.js"></script>
+<script src="files\assets\pages\data-table\js\vfs_fonts.js"></script>
+<script src="files\bower_components\datatables.net-buttons\js\buttons.print.min.js"></script>
+<script src="files\bower_components\datatables.net-buttons\js\buttons.html5.min.js"></script>
+<script src="files\bower_components\datatables.net-bs4\js\dataTables.bootstrap4.min.js"></script>
+<script src="files\bower_components\datatables.net-responsive\js\dataTables.responsive.min.js"></script>
+<script src="files\bower_components\datatables.net-responsive-bs4\js\responsive.bootstrap4.min.js"></script>
+<!-- i18next.min.js -->
+<script type="text/javascript" src="files\bower_components\i18next\js\i18next.min.js"></script>
+<script type="text/javascript" src="files\bower_components\i18next-xhr-backend\js\i18nextXHRBackend.min.js"></script>
+<script type="text/javascript" src="files\bower_components\i18next-browser-languagedetector\js\i18nextBrowserLanguageDetector.min.js"></script>
+<script type="text/javascript" src="files\bower_components\jquery-i18next\js\jquery-i18next.min.js"></script>
+<!-- Custom js -->
+<script src="files\assets\pages\data-table\js\data-table-custom.js"></script>
+
+<script src="files\assets\js\pcoded.min.js"></script>
+<script src="files\assets\js\vartical-layout.min.js"></script>
+<script src="files\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="files\assets\js\script.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>

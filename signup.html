@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="files/assets2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="files/assets2/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+    <title>Signup</title>
+</head>
+<body style="font-family: poppins,sans-serif;">
+    <div class="container main1"  >
+        <div class="row">
+            <!--Column one code-->
+            <div class="col-3" style="background-color:  #01a9ac; ">
+                <div >
+                    <div class="logo mt-4 ms-3">
+                        <i class='bx bx-pencil' ></i>
+                        <span style="color: #fff;">Logo Name</span>
+                    </div>
+                    <div class="my-4 ">
+                        <br>
+                        
+                    </div>
+                        <div class="pt-1 ">
+                            <h3 class="fw-bold text-center mt-1 mb-3" style="color: #fff;">Already a Member</h3>
+                            <p class="text-center mb-2 " style="color: #fff;">To keep track on your dashboard ple1ase login with your personla info</p>
+                            <a href="Login.html" class="loginbtn mb-4">Login</a>
+                        </div>
+                </div>
+                <div class="mb-5">
+                    <img src="files/assets2/images/Humaaans - 2 Characters.png" alt="" srcset="" class="mt-4 mb-3" style="width: 100%; max-width: 350px;">
+                </div>
+            </div>
+            <!--Column two code-->
+            <div class="col-9">                
+                <h2 class="big-heading text-center mt-3">Create an Account</h2>
+                <form action="#" novalidate class="need-validation">
+                    <!--Progress bar-->
+                        <div class="progress-bar mx-auto pt-3">
+                            <div class="stage">
+                                <p class="tool-tip">First step</p>
+                                <p class="stageno stageno-1">1</p>
+                            </div>
+                            <div class="stage">
+                                <p class="tool-tip">Second step</p>
+                                <p class="stageno stageno-2">2</p>
+                            </div>
+                            <div class="stage">
+                                <p class="tool-tip">Third step</p>
+                                <p class="stageno stageno-3">3</p>
+                            </div>
+                        </div>
+                        <!--First step code-->
+                        <div class="stage1-content">
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 awe-ico" style="margin-right: 6%;">
+                                        <label for="Name" class="mb-1" style="color:  #01a9ac;">Name</label>
+                                       <br>
+                                       <i class="icon fa-solid fa-user-tie"></i>
+                                        <input type="text" class="form-control  input-f " id="Name" style="color:#45474B;" required> 
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                        
+                                    </div>
+                                  
+                                    <div class="mt-2  awe-ico " style="margin-right: 6%;">
+                                        <label for="surname" class="mb-1" style="color:  #01a9ac;">Sur-name</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-user"></i>
+                                        <input type="text" class="form-control input-f " id="surname"  style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                            
+                                        <label for="email" class="mb-1" style="color: #01a9ac;">Email</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-envelope "></i>
+                                        <input type="email" class="form-control  input-f " id="email" style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                                        
+                                        <label for="password" class="mb-1" style="color:  #01a9ac;">Password</label>
+                                        <br>
+                                        <i class=" icon fa-solid fa-lock"></i>
+                                        <input type="password" class="form-control input-f " id="password"  style="color:#45474B;"  required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-btns mt-5">
+                                <input type="button" value="Next" class="nextPage stagebtn1b" onclick="stage1to2();">
+                            </div>
+                            <p class="text-center mt-5">Already have an Account : <a href="Login.html" style="color:  #01a9ac;">Signin</a> </p>
+                        </div>
+                         <!--Second step code-->
+                        <div class="stage2-content">
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 awe-ico" style="margin-right: 6%;">
+                                        <label for="tax-regime" class="mb-1" style="color:  #01a9ac;">Tax Regime</label>
+                                        <br>
+                                        <i class=" icon fa-solid fa-scroll"></i>
+                                        <input type="text" class="form-control  input-f " id="tex-regime" style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+            
+                                    </div>
+                                    <div class="mt-2  awe-ico " style="margin-right: 6%;">
+                                        <label for="vat-number" class="mb-1" style="color:  #01a9ac;">Vat Number</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-hashtag"></i>
+                                        <input type="text" class="form-control input-f " id="vat-number"  style="color: #45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+            
+                                    </div>
+        
+                                </div>
+                                
+                            </div>
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                            
+                                        <label for="fiscal-code" class="mb-1" style="color:  #01a9ac;">Fiscal Code</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-terminal"></i>
+                                        <input type="text" class="form-control  input-f " id="fiscal-code" style="color:#45474B;"  required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                                        
+                                        <label for="pec-mail" class="mb-1" style="color:  #01a9ac;">Pec Mail</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-envelope "></i>
+                                        <input type="email" class="form-control input-f " id="pec-mail"  style="color:#45474B;"  required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                            
+                                        <label for="companyName" class="mb-1" style="color:  #01a9ac;">companyName</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-building"></i>
+                                        <input type="text" class="form-control  input-f " id="companyName" style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                                        
+                                        <label for="Phone" class="mb-1" style="color:  #01a9ac;">Phone Number</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-phone"></i>
+                                        <input type="tel" class="form-control input-f " id="Phone"  style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination-btns mt-5">
+                                <input type="button" value="Previous" class="prePage stagebtn2a me-3"onclick="stage2to1();" >
+                                <input type="button" value="Next" class="nextPage stagebtn2b"onclick="stage2to3();">
+                            </div>
+                          
+                        </div>
+
+                        <!--Third step code-->
+                        <div class="stage3-content">
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 awe-ico" style="margin-right: 6%;">
+                                        <label for="province" class="mb-1" style="color: #01a9ac;">Province</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-location-crosshairs"></i>
+                                        <input type="text" class="form-control  input-f " id="province" style="color:#45474B;"  required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+            
+                                    </div>
+                                    <div class="mt-2  awe-ico " style="margin-right: 6%;">
+                                        <label for="city" class="mb-1" style="color: #01a9ac;">City</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-city"></i>
+                                        <input type="text" class="form-control input-f " id="city"  style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+            
+                                    </div>
+        
+                                </div>
+                                
+                            </div>
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column flex-lg-row mt-2 mx-auto"  >
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                            
+                                        <label for="postalCode" class="mb-1" style="color: #01a9ac;">Postal Code</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-signs-post"></i>
+                                        <input type="text" class="form-control  input-f " id="fiscal-code" style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" style="margin-right: 6%;">
+                                        
+                                        <label for="Address" class="mb-1" style="color: #01a9ac;">Address</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-location-dot"></i>
+                                        <input type="text" class="form-control input-f " id="Address"  style="color:#45474B;" required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="form-check" style="display: flex;justify-content: center;align-items: center;">
+                                    <input type="checkbox" class="form-check-input me-2" id="invalid-check" required >
+                                    <label for="invalid-check" class="form-check-label" style="color: #01a9ac;">Agree Terms and Conditions</label>
+                                </div>
+                            </div>
+                            <div class="pagination-btns mt-5">
+                                <input type="button" value="Previous" class="prePage stagebtn3a me-3 "onclick="stage3to2();">
+                                <input type="submit" value="Register" class="nextPage stagebtn3b">
+                            </div>
+                         
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="files/assets2/js/bootstrap.bundle.min.js"></script>
+    <script src="files/assets2/js/script.js"></script>
+</body>
+</html>

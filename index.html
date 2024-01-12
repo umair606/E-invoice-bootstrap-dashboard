@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Premium Admin Template</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    
+   <!-- Favicon icon -->
+   <link rel="icon" href="files/assets/images/" type="image/x-icon">
+   <!-- Google font-->
+   <link rel="stylesheet" href="files/assets/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+   <!-- Required Fremwork -->
+   <link rel="stylesheet" type="text/css" href="files\bower_components\bootstrap\css\bootstrap.min.css">
+   <!-- feather Awesome -->
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\feather\css\feather.css">
+   <!-- Style.css -->
+   <link rel="stylesheet" type="text/css" href="files\assets\css\style.css">
+   <link rel="stylesheet" type="text/css" href="files\assets\css\jquery.mCustomScrollbar.css">
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\themify-icons\themify-icons.css">
+   <!-- ico font -->
+   <link rel="stylesheet" type="text/css" href="files\assets\icon\icofont\css\icofont.css">
+   <!--font awesome-->
+   <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        html{
+         scroll-behavior: smooth;
+         scroll-padding: 5rem;
+        }
+
+.cardi {
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.cardi .box {
+    position: absolute;
+    color: #262626;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+.cardi .box.front{
+    background-image: url(img/pattern.png);
+    background-repeat: repeat;
+}
+.cardi .box.front,
+.cardi .box.back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardi .box.front img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #262626;
+	margin-bottom: 25px;
+}
+
+.cardi:hover .box.front {
+    transform: rotateY(180deg);
+}
+.box.front h2 {
+	font-family: 'poppins', sans-serif;
+}
+.box.front h4 {
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.socials i {
+	margin: 0 15px;
+}
+.cardi .box.back {
+    position: absolute;
+    background: #fff;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.cardi .box.back .fa-quote-left {
+	position: absolute;
+	top: 25px;
+	left: 180px;
+	font-size: 3.2rem;
+}
+
+.cardi:hover .box.back {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                        <a href="index.html">
+                            <p class="fw-bold my-3 ms-2"> <i class="feather icon-home"></i> Logo Name</p>
+                        </a>
+                        <a class="mobile-options">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon search-btn"><i class="feather icon-search"></i></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()">
+                                    <i class="feather icon-maximize full-screen"></i>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                      
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="feather icon-bell"></i>
+                                        <span class="badge bg-c-pink">5</span>
+                                    </div>
+                                    <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <h6>Notifications</h6>
+                                            <label class="label label-danger">New</label>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img1.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Jason Brody</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img-2.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="files/assets/images/img-3.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="files/assets/images/profile-pic.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <span>Wahid Asghar</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="userProfile.html">
+                                                <i class="feather icon-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Login.html">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="pcoded-navigatio-lavel">Navigation</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu active pcoded-trigger">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-gauge-high"></i></span>
+                                        <span class="pcoded-mtext">Dashboard</span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="#statistics">
+                                                <span class="pcoded-mtext">Statistics</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#quick">
+                                                <span class="pcoded-mtext">Quick actions</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#service">
+                                                <span class="pcoded-mtext">Services</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#pack">
+                                                <span class="pcoded-mtext">Packages</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#Testemonials">
+                                                <span class="pcoded-mtext">Testemonials</span>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="    #arrival">
+                                                <span class="pcoded-mtext">Arrivals & Help center</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                   
+                                </li>
+                                
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-note-sticky"></i></span>
+                                        <span class="pcoded-mtext">Invoice</span>
+                                        <span class="pcoded-badge label label-danger">HOT</span>
+                                      
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        
+                                       
+                                        <li class=" ">
+                                            <a href="CreateInvoice.html">
+                                                <span class="pcoded-mtext">Create Invoice</span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="Sentinvoices.html">
+                                                <span class="pcoded-mtext">Sent Invoice</span>
+                                                <span class="pcoded-badge label label-danger">100+</span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="ReceivedInvoice.html">
+                                                <span class="pcoded-mtext">Recevied Invoice</span>
+                                                <span class="pcoded-badge label label-info">10</span>
+                                            </a>
+                                        </li>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="Draft.html">
+                                            <span class="pcoded-mtext">Drafts</span>
+                                            <span class="pcoded-badge label label-warning ">2</span>
+                                        </a>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="Customer.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-user-group"></i></span>
+                                        <span class="pcoded-mtext">Customers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigatio-lavel">Pages</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="Statistics.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-signal"></i></span>
+                                        <span class="pcoded-mtext">Statistics</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Warehouse.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-warehouse"></i></span>
+                                        <span class="pcoded-mtext">Warehouse</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Productpage.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-dolly"></i></span>
+                                        <span class="pcoded-mtext">Products and Services</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="Subscription.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-crown"></i></span>
+                                        <span class="pcoded-mtext">Subscriptions</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="pcoded-navigatio-lavel">Shortcuts</div>
+                            <ul class="pcoded-item pcoded-left-item">                            
+                                <li class=" ">
+                                    <a href="Login.html">
+                                        <span class="pcoded-micon"><i class="fa-solid fa-right-from-bracket"></i></span>
+                                        <span class="pcoded-mtext " style="color: #EF4040;font-weight: 700;">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div  class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-3">
+                                    
+                                    
+                                    <div> <h5 class=" font-weight-bold font pt-3 ms-4" >Welcome agian <span class="text-primary">Wahid Asghar!</span></h5></div>
+                                    <div class="pt-3">  <a href="CreateInvoice.html" class="btn btn-primary btn-round me-3"><i class="fa-solid fa-paper-plane"></i>Create invoice</a></div>
+                                </div>
+                               
+                                <div style="display: flex;justify-content: space-between;align-items: center;">
+                                    <div  style="font-size: 1.4rem;margin-left: 2%;margin-bottom: -1%;" id="statistics">Statistics :</div>
+                                    <div><a href="Statistics.html" style="padding-right: 35px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                </div>
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <!--Statistics-->
+                                        <div class="row">
+                                            <!-- task, page, download counter  start -->
+                                            <div class="col-xl-3 col-md-6">
+                                                
+                                                <div class="card bg-c-yellow update-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-end">
+                                                            <div class="col-8">
+                                                                <h4 class="text-white">$30200</h4>
+                                                                <h6 class="text-white m-b-0">Total</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <canvas id="update-chart-1" height="50"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <p class="text-white m-b-0"><i class="feather icon-clock text-white f-14 m-r-10"></i>update : 2:15 am</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card bg-c-green update-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-end">
+                                                            <div class="col-8">
+                                                                <h4 class="text-white">290+</h4>
+                                                                <h6 class="text-white m-b-0">Customers</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <canvas id="update-chart-2" height="50"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <p class="text-white m-b-0"><i class="feather icon-clock text-white f-14 m-r-10"></i>update : 2:15 am</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card bg-c-pink update-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-end">
+                                                            <div class="col-8">
+                                                                <h4 class="text-white">145</h4>
+                                                                <h6 class="text-white m-b-0">Task Completed</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <canvas id="update-chart-3" height="50"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <p class="text-white m-b-0"><i class="feather icon-clock text-white f-14 m-r-10"></i>update : 2:15 am</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card bg-c-lite-green update-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-end">
+                                                            <div class="col-8">
+                                                                <h4 class="text-white">500</h4>
+                                                                <h6 class="text-white m-b-0">Invoices</h6>
+                                                            </div>
+                                                            <div class="col-4 text-right">
+                                                                <canvas id="update-chart-4" height="50"></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <p class="text-white m-b-0"><i class="feather icon-clock text-white f-14 m-r-10"></i>update : 2:15 am</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- task, page, download counter  end -->
+                                        
+
+                                        </div>
+                                        <!-- Quick Actions -->
+                                        <div style="font-size: 1.4rem;margin-bottom: 1%;" id="quick" >Quick actions :</div>
+                                        <div class="conatiner my-2" style="background-color: #fff;border-radius: 15px;">
+                                            <div class="row"  >
+                                                <div class="col-md-12  py-1 "  >
+                                                    <div class="card">
+                                                       
+                                                        <div class="card-body">
+                                                            <div class="card-block d-flex flex-column flex-md-row justify-content-around align-items-center gap-3" >
+                                                                <div><a href="Sentinvoices.html" class="btn btn-outline-success btn-round"><i class="fa-solid fa-arrow-up"></i>Sent invoices</a></div>
+                                                                <div><a href="ReceivedInvoice.html" class="btn btn-outline-info btn-round"><i class="fa-solid fa-arrow-down"></i>Received invoices</a></div>
+                                                                <div><a href="Draft.html" class="btn btn-outline-warning btn-round"><i class="fa-solid fa-dumpster"></i>Draft invoices</a></div>
+                                                                <div><a href="Customer.html" class="btn btn-outline-danger btn-round"><i class="fa-solid fa-users"></i>Customer directory</a></div>
+                                                                <div><a href="#help" class="btn btn-outline-primary btn-round"><i class="fa-solid fa-question"></i>Help</a></div>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                 </div>
+                                                
+                                            </div>
+                                        </div>
+                                         
+                                        <!--What we offer-->
+                                        <div style="font-size: 1.4rem;" class="mt-2"  id="service">Services :</div>
+                                        <section class="section bg-light pt-2 mb-0">
+                                            <div class="container pt-2">
+                                                <h5 class="text-center pb-4">We offer services to related <span class="text-primary font-weight-bold">E-invoice system</span> </h5>
+                                                <div class="row ">
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="card text-center">
+                                                            <div class="card-body">
+                                                                <div class="circle " style="display: inline-block; font-size: 3rem;width: 70px;height: 70px;">
+                                                                    <i class="fa-regular fa-note-sticky text-primary"></i>
+                                                                </div>
+                                                                <h5 class="font-weight-bold pb-2">Send and Received</h5>
+                                                                <p>Allows you to send and Received e-invoices </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="card text-center">
+                                                            <div class="card-body">
+                                                                <div class="circle " style="display: inline-block; font-size: 3rem;width: 70px;height: 70px;">
+                                                                    <i class="fa-solid fa-signal text-warning"></i>
+                                                                </div>
+                                                                <h5 class="font-weight-bold pb-2">Statistics</h5>
+                                                                <p>This system allows you to view your statistics</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="card text-center">
+                                                            <div class="card-body">
+                                                                <div class="circle " style="display: inline-block; font-size: 3rem;width: 70px;height: 70px;">
+                                                                    <i class="fa-solid fa-mobile-screen-button text-success"></i>
+                                                                </div>
+                                                                <h5 class="font-weight-bold pb-2">Smartphone</h5>
+                                                                <p>You manage everything from smartphone</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                         <!--Subscriptions-->
+                                         <div style="display: flex;justify-content: space-between;align-items: center;">
+                                            <div  style="font-size: 1.4rem;" class="mb-2 mt-0" id="pack">Packages :</div>
+                                            <div><a href="Subscription.html" style="padding-top: 10px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+                                        </div>
+                                        <h5 class="text-center mb-2">We offer <span class="text-primary font-weight-bold mt-3">Subscription packages</span></h5>
+                                        <div class="container mt-5 mb-3">
+                                           
+                                            <div class="row mx-0 pricing card-deck flex-column flex-md-row mb-3 align-items-center justify-content-center gap-5">
+                                
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0" style="  box-shadow: 0px 12px 18px rgba(54, 176, 138, 0.005);
+                                                border-radius: 20px;background: #fff;">
+                                                    <div class="card-pricing text-center px-3 mb-4" >
+                                                        <span class="h6 mx-auto px-4 py-1 rounded-bottom bg-secondary text-white shadow-sm">Starter</span>
+                                                        <div class="bg-transparent card-header pt-4 border-0">
+                                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0 "data-pricing-value="15">$<span class="price">3</span><span class="h6 text-muted ml-2">/per</span></h1>
+                                                        </div>
+                                                        <div class="card-body pt-0">
+                                                            <ul class=" mb-4">
+                                                                <li class="my-2">Upto five users</li>
+                                                                <li class="my-2">Basic support on Github</li>
+                                                                <li class="my-2">Monthly updates</li>
+                                                                <li class="my-2">Free cancellation</li>
+                                                            </ul>
+                                                            <a type="button" href="#" class="btn btn-outline-secondary mb-3">Order Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0" style="  box-shadow: 0px 12px 18px rgba(54, 176, 138, 0.005);
+                                                border-radius: 6px;background: #fff;">
+                                                    <div class="card-pricing text-center px-3 mb-4">
+                                                        <span class="h6 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Basic</span>
+                                                        <div class="bg-transparent card-header pt-4 border-0">
+                                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0 "data-pricing-value="6">$<span class="price">6</span><span class="h6 text-muted ml-2">/per</span></h1>
+                                                        </div>
+                                                        <div class="card-body pt-0">
+                                                            <ul class=" mb-4">
+                                                                <li class="my-2">Upto ten users</li>
+                                                                <li class="my-2">Basic support on Github</li>
+                                                                <li class="my-2">Monthly updates</li>
+                                                                <li class="my-2">Free cancellation</li>
+                                                            </ul>
+                                                            <a type="button" href="#" class="btn btn-outline-primary mb-3">Order Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 p-0" style="  box-shadow: 0px 12px 18px rgba(54, 176, 138, 0.005);
+                                                border-radius: 6px;background: #fff;">
+                                                    <div class="card-pricing text-center px-3 mb-4">
+                                                        <span class="h6 mx-auto px-4 py-1 rounded-bottom bg-success text-white shadow-sm">Pro</span>
+                                                        <div class="bg-transparent card-header pt-4 border-0">
+                                                            <h1 class="h1 font-weight-normal text-primary text-center mb-0 "data-pricing-value="9">$<span class="price">9</span><span class="h6 text-muted ml-2">/per</span></h1>
+                                                        </div>
+                                                        <div class="card-body pt-0">
+                                                            <ul class=" mb-4">
+                                                                <li class="my-2">Upto fifteen users</li>
+                                                                <li class="my-2">Normal support on Github</li>
+                                                                <li class="my-2">Monthly updates</li>
+                                                                <li class="my-2">Free cancellation</li>
+                                                            </ul>
+                                                            <a type="button" href="#" class="btn btn-outline-success mb-3">Order Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <!--Arrival & Help-->
+                                       
+                                        <!--Testemonials start-->
+                                        <div  style="font-size: 1.4rem;margin-left: 0%;margin-bottom: -1%;" id="Testemonials" class="mb-3">Testemonials :</div>
+                                        <h5 class="text-center pb-4">What people <span class="text-primary font-weight-bold">say !!!</span> </h5>
+                                        <div class="container">
+                                            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+                                                
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-1.jpg">
+                                                                        <h2>Jesicca Doe</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-2.jpg">
+                                                                        <h2>Claire Chedd</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-3.jpg">
+                                                                        <h2>Maria Lopez</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-4.jpg">
+                                                                        <h2>Jesicca Doe</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-5.jpg">
+                                                                        <h2>Claire Chedd</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-6.jpg">
+                                                                        <h2>Mary Joe</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="row">
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-1.jpg">
+                                                                        <h2>Jesicca Doe</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-3.jpg">
+                                                                        <h2>Claire Chedd</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="card cardi">
+                                                                    <div class="box front">
+                                                                        <img alt="" src="files/assets/images/f-img-7.jpg">
+                                                                        <h2>Mary Joe</h2>
+                                                                        <h4>CEO, Microsoft</h4>
+                                                                        <p class="socials">
+                                                                            <i class="fa fa-facebook"></i>
+                                                                            <i class="fa fa-twitter"></i>
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="box back">
+                                                                        <span class="fa fa-quote-left"></span>
+                                                                        <p>
+                                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis. Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>			
+                                    
+                                    
+                                            </div>
+                                        </div>
+                                        <!--Testemonials end-->
+                                        <div style="font-size: 1.4rem;" class="my-5"  id="arrival">Arrivals & Help Center :</div>
+                                        <div class="container bg-light ">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="font-weight-bold mb-5">News & Arrivals</h5>
+                                                            <p class="font-weight-bold text-secondary"> <span class="pcoded-badge label label-success me-2 ">Novelty</span>Tax calculations and $85000 limit for flat sales</p>
+                                                            <p class="font-weight-bold text-secondary"> <span class="pcoded-badge label label-success me-2 ">Novelty</span>Import devices from other software</p>
+                                                            <p class="font-weight-bold"> <span class="pcoded-badge label label-warning me-2 ">Arriving</span>Improved schedule</p>
+                                                            <p class="font-weight-bold"> <span class="pcoded-badge label label-warning me-2 ">Arriving</span>Multiple actions in invoice</p>
+                                                            <p class="font-weight-bold"> <span class="pcoded-badge label label-warning me-2 ">Arriving</span>Ability to customize your invoice</p>
+                                                            <p class="mt-5 mb-0"> Do yo know any suggestions ?<a href="#" class="text-primary"> Recommend us</a> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h5 class="font-weight-bold mb-5" id="help">Help Center</h5>
+                                                            <div class="d-flex flex-column flex-md-row gap-3 justify-content-around align-items-center mb-5">
+                                                                <div><img src="files/assets/images/f-img-2.jpg" alt="" style="width: 90px;"></div>
+                                                                <div><img src="files/assets/images/f-img-3.jpg" alt="" style="width: 90px;"></div>
+                                                                <div><img src="files/assets/images/f-img-4.jpg" alt="" style="width: 90px;"></div>
+                                                                <div><img src="files/assets/images/f-img-5.jpg" alt="" style="width: 90px;"></div>
+                                                                
+                                                            </div>
+                                                            <p class="text-center my-4">In chat, in phone and in mobile we are here for you</p>
+                                                            <div class="mt-2 mb-3 d-flex flex-column flex-md-row gap-3 justify-content-around align-items-center" >
+                                                                <button class="btn btn-outline-primary"><i class="fa-solid fa-phone text-primary"></i>Call</button>
+                                                                <button class="btn btn-outline-primary"><i class="fa-solid fa-message text-primary"></i>Message</button>
+                                                                <button class="btn btn-outline-primary"><i class="fa-solid fa-envelope text-primary"></i>Email</button>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-block mt-3 text-center">
+                                                <a href="#fakelink" class="btn btn-facebook"><i class="icofont icofont-social-facebook"></i>Facebook</a>
+                                                <a href="#fakelink" class="btn btn-twitter"><i class="icofont icofont-social-twitter"></i>Twitter</a>
+                                                <a href="#fakelink" class="btn btn-linkedin"><i class="icofont icofont-brand-linkedin"></i>Linkedin</a>
+                                                <a href="#fakelink" class="btn btn-dribbble"><i class="icofont icofont-social-dribble"></i>Dribble</a>
+                                                <a href="#fakelink" class="btn btn-google-plus"><i class="icofont icofont-social-google-plus"></i>Google+</a>
+                                                <a href="#fakelink" class="btn btn-instagram"><i class="icofont icofont-social-instagram"></i>Instagram</a>
+                                                <a href="#fakelink" class="btn btn-pinterest"><i class="icofont icofont-social-pinterest"></i>Pinterest</a>
+                                                <a href="#fakelink" class="btn btn-dropbox"><i class="icofont icofont-social-dropbox"></i>Dropbox</a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="styleSelector">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Required Jquery -->
+  \ <!-- Required Jquery -->
+  <script data-cfasync="false" src="..\..\..\cdn-cgi\scripts\5c5dd728\cloudflare-static\email-decode.min.js"></script><script type="text/javascript" src="files\bower_components\jquery\js\jquery.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\jquery-ui\js\jquery-ui.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\popper.js\js\popper.min.js"></script>
+  <script type="text/javascript" src="files\bower_components\bootstrap\js\bootstrap.min.js"></script>
+  <!-- jquery slimscroll js -->
+  <script type="text/javascript" src="files\bower_components\jquery-slimscroll\js\jquery.slimscroll.js"></script>
+  <!-- modernizr js -->
+  <script type="text/javascript" src="files\bower_components\modernizr\js\modernizr.js"></script>
+  <!-- Chart js -->
+  <script type="text/javascript" src="files\bower_components\chart.js\js\Chart.js"></script>
+  <!-- amchart js -->
+  <script src="files\assets\pages\widget\amchart\amcharts.js"></script>
+  <script src="files\assets\pages\widget\amchart\serial.js"></script>
+  <script src="files\assets\pages\widget\amchart\light.js"></script>
+  <script src="files\assets\js\jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="..\files\assets\js\SmoothScroll.js"></script>
+  <script src="files\assets\js\pcoded.min.js"></script>
+  <!-- custom js -->
+  <script src="files\assets\js\vartical-layout.min.js"></script>
+  <script type="text/javascript" src="files\assets\pages\dashboard\custom-dashboard.js"></script>
+  <script type="text/javascript" src="files\assets\js\script.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js">
+</script> 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+
+</html>

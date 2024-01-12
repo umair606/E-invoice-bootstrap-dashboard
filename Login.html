@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="files/assets2/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="files/assets2/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d61d513dea.js" crossorigin="anonymous"></script>
+    <title>Sigin</title>
+</head>
+<body  style="font-family: poppins,sans-serif;">
+    <div class="container main1"  >
+        <div class="row">
+            <!--Column one code-->
+            <div class="col-3" style="background-color:  #01a9ac; ">
+                <div >
+                    <div class="logo mt-4 ms-3">
+                        <i class='bx bx-pencil' ></i>
+                        <span style="color: #fff;">Logo Name</span>
+                    </div>
+                    <div class="my-4 ">
+                        <br>
+                        
+                    </div>
+                        <div class="pt-1 ">
+                            <h3 class="fw-bold text-center mt-1 mb-3" style="color: #fff;">Create an Account</h3>
+                            <p class="text-center mb-2 " style="color: #fff;">To keep track on your dashboard please Register with your personl info</p>
+                            <a href="signup.html" class="loginbtn mb-4">Register</a>
+                        </div>
+                </div>
+                <div class="">
+                    <img src="files/assets2/images/Humaaans - 2 Characters2.png" alt="" srcset="" class="mt-4" style="width: 100%; max-width: 380px;">
+                </div>
+            </div>
+            <!--Column two code-->
+            <div class="col-9">                
+                <h2 class="big-heading text-center mt-5">Login into your Account</h2>
+                <br>
+                <br>
+                <form action="#" novalidate class="need-validation">
+                        
+                        <!--
+                        <div class="d-flex " style="align-items: center;justify-content: center;gap: 2%;cursor: pointer;">
+                            <div><a href="#"><i class="fa-brands fa-square-facebook" style="font-size: 2rem;color: #686eff;"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-square-twitter" style="font-size: 2rem;color: #686eff;"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-square-instagram" style="font-size: 2rem;color: #686eff;"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-square-google-plus" style="font-size: 2rem;color: #686eff;"></i></a></div>
+                        </div>
+                        -->
+                        <div class="stage1-content mt-3">
+                            <div style=" width: 100%;display: flex;align-items: center;justify-content: center;">
+                                <div class="d-flex  flex-column  mt-2 mx-auto"  >
+                                    <div class="mt-2 awe-ico">
+                                        <label for="Name" class="mb-1" style="color:  #01a9ac;">Name</label>
+                                       <br>
+                                       <i class="icon fa-solid fa-user-tie"></i>
+                                        <input type="text" class="form-control  input-i " id="Name" style="color:#45474B;"  required> 
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" >
+                                        <label for="email" class="mb-1" style="color:  #01a9ac;">Email</label>
+                                        <br>
+                                        <i class="icon fa-solid fa-envelope "></i>
+                                        <input type="email" class="form-control  input-i " id="email" style="color:#45474B;"  required>
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                    <div class="mt-2 mt-2 awe-ico" >
+                                        
+                                        <label for="password" class="mb-1" style="color:  #01a9ac;">Password</label>
+                                        <br>
+                                        <i class=" icon fa-solid fa-lock"></i>
+                                
+                                        <input type="password" class="form-control input-i " id="pass"  style="color:#45474B;"  required>
+                                       
+                                         
+                                        <div class="valid-feedback"></div>
+                                        <div class="invalid-feedback"></div>
+                                       
+                                    </div>
+                                    <div class="d-flex gap-5">
+                                        <div class="form-check mt-2" style="display: flex;justify-content: center;align-items: center;">
+                                            <input type="checkbox" class="form-check-input me-1" id="invalid-check" required >
+                                            <label for="invalid-check" class="form-check-label" style="color: #000;">Remember Me</label>
+                                        </div>
+                                        <div class="mt-2">
+                                            <a href="Forgetpassword.html" style="color:  #01a9ac;">Forget your password</a>
+                                        </div>
+                                    </div>
+                                    <div class="pagination-btns mt-5">
+                                        <input type="submit" value="Login" class="loginPage stagebtn3b">
+                                    </div>
+                                  
+        
+                                </div>
+                            </div>
+                         
+                        </div>
+                        <p class="text-center mt-5">Create an Account : <a href="signup.html" style="color:  #01a9ac;">Signup</a> </p>
+                    </form>
+                    
+                </div>
+                
+            </div>
+        </div>
+    <script type="text/javascript">
+           const form=document.querySelector(".need-validation");
+         form.addEventListener('submit',(e)=>{
+             if(!form.checkValidity()){
+                 e.preventDefault();
+             }else{
+                 alert("successfully Login");
+             }
+             form.classList.add("was-validated");
+         });
+  
+    </script>
+     <script src="files/assets2/js/bootstrap.bundle.min.js"></script>
+     <script src="files/assets2/js/script.js"></script>
+</body>
+</html>
